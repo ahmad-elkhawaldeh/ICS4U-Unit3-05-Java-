@@ -79,7 +79,8 @@ final class Main {
 
         System.out.println("\nChanging license plate:");
          lamborghini.setLicensePlate("GGyt456");
-        System.out.println("New License Plate: " +  lamborghini.getLicensePlate());
+        System.out.println("New License Plate: " + 
+                           lamborghini.getLicensePlate());
 
         System.out.println("\nDone.");
     }
