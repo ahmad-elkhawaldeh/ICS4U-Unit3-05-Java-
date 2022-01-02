@@ -51,18 +51,18 @@ final class Main {
      * @param args No args will be used
      */
     public static void main(final String[] args) {
-        final Vehicle Bmw = new Vehicle("white", "B40-C4RR0", FOUR, 200);
+        final Vehicle bmw = new Vehicle("white", "B40-C4RR0", FOUR, 200);
 
         System.out.println("Created BMW \nStatus:\n");
         Bmw.status();
 
         System.out.println("\nAccelerating, 10 of power for 10 sec.");
-        Bmw.accelerate(TEN, TEN);
-        System.out.println(NEW_SPEED + Bmw.getSpeed());
+        bmw.accelerate(TEN, TEN);
+        System.out.println(NEW_SPEED + bmw.getSpeed());
 
         System.out.println("\nChanging colour to blue:");
-        Bmw.setColour("blue");
-        System.out.println("\nNew colour:" + Bmw.getColour());
+        bmw.setColour("blue");
+        System.out.println("\nNew colour:" + bmw.getColour());
 
         final Vehicle  lamborghini = new Vehicle("red", "AER-783", 2, 400);
 
@@ -79,8 +79,8 @@ final class Main {
 
         System.out.println("\nChanging license plate:");
          lamborghini.setLicensePlate("GGyt456");
-        System.out.println("New License Plate: " + 
-                           lamborghini.getLicensePlate());
+        System.out.println("New License Plate: "
+                           + lamborghini.getLicensePlate());
 
         System.out.println("\nDone.");
     }
